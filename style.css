@@ -1,0 +1,271 @@
+/*=============================*/
+/*			CSS Reset
+/*		v1.0 | 20080212
+/*=============================*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=============================*/
+/*		  Mise en page
+/*=============================*/
+body{
+	width:100%;
+	background-color:#e5e5e4;
+	font-family:'Arial', sans-serif;
+	font-size:12px;
+	color:#5b5858;
+	text-align:center;
+}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Cabin', sans-serif;}
+
+h1{
+	font-size:24px;
+	color:#404444;
+}
+h2{
+	font-size:16px;
+	color:#898b82;
+	margin-top:2px;
+	margin-bottom:10px;
+}
+h3{
+	font-family: 'Arial', sans-serif;
+	font-size:12px;
+	color:#404444;
+	font-weight:bold;
+}
+#slogan{
+	width:350px;
+	text-align:right;
+	padding-top:100px;
+	margin-left:800px;
+	font-size:20px;
+	color:#404444;
+	font-family: 'Cabin', sans-serif;
+	font-weight:bold;
+
+}
+.ligne_sep{
+	background:url(images/ligne_sep.jpg) no-repeat;
+}
+.logo{
+	margin-left:-430px;
+	margin-top:-131px;
+	margin-bottom:15px;
+	
+}
+#header_bandeau{
+	text-align:center;
+	margin:auto;
+	width:100%;
+	background:url(images/ligne.jpg) repeat-x;
+}
+#menu{
+	width:702px;
+	margin:auto;
+	background:url(images/bg_menu.jpg) repeat-x;
+	height:102px;	
+}
+#contents{
+	width:702px;
+	padding:15px;
+	background-color:#fff;
+	border-bottom:5px solid #3a5c8e;
+	margin:auto;
+	text-align:left;
+}
+#menu_footer{
+	width:702px;
+	height:65px;
+	padding-top:10px;
+	margin:auto;
+	font-size:12px;
+	color:#5b5858;
+}
+#copyrights{
+	color:#5b5858;
+	font-family:"Arial", sans-serif;
+	font-size:12px;
+	text-align:center;
+	margin-top:5px;
+}
+#nonflottant{
+	clear:both;
+}
+.float{
+	margin-top:15px;
+	margin-right:15px;
+	margin-bottom:10px;
+	float:left;
+}
+.img_float{
+	width:650px;
+	margin-bottom:15px;
+	clear:both;
+}
+
+/*=============================*/
+/*		  Menu CSS
+/*=============================*/
+
+#menu_css {
+ list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 700px;
+  position:relative;
+}
+#menu_css a {
+	display: block;
+	text-indent: -900%;
+	position: absolute;
+	outline: none;
+	margin-top:25px;
+}
+#menu_css a:hover {
+	background-position: left bottom;
+}
+#menu_css .accueil {
+	width: 68px;
+	height: 70px;
+	background: url(images/btn_accueil2.jpg) no-repeat;
+	left:265px;
+}
+#menu_css .equipe {
+
+	width: 68px;
+	height: 70px;
+	background: url(images/btn_equipe2.jpg) no-repeat;
+	left:343px;
+}
+#menu_css .expertise {
+	width: 97px;
+	height: 70px;
+	background: url(images/btn_expertises2.jpg) no-repeat;
+	left:421px;
+}
+#menu_css .chronique {
+	width: 93px;
+	height: 70px;
+	background: url(images/btn_chronique2.jpg) no-repeat;
+	left:528px;
+}
+#menu_css .contact {
+	width: 72px;
+	height: 70px;
+	background: url(images/btn_contact2.jpg) no-repeat;
+	left:635px;
+}
+/*=============================*/
+/*		 Links
+/*=============================*/
+a:link{
+	text-decoration:underline;
+	color:#5b5858;
+}
+a:hover{
+	text-decoration:none;
+	color:#3a5c8e;
+}
+a:visited{
+	text-decoration:underline;
+	color:#5b5858;
+}
+
+/*=============================*/
+/*		 Formulaire
+/*=============================*/
+.notification_error
+{
+border: 1px solid #A25965;
+height: auto;
+width: 80%;
+margin:auto;
+padding: 4px;
+background: #e34e4e;
+text-align: left;
+-moz-border-radius: 5px;
+color:#000a25;
+margin-bottom:10px;
+}
+
+.notification_ok
+{
+border: 1px solid #246d41;
+height: auto;
+width: 80%;
+padding: 8px;
+background: #38a965;
+margin:auto;
+text-align: center;
+-moz-border-radius: 5px;
+color:#000a25;
+margin-bottom:10px;
+
+}
+
+
+
+/*CSS HACKS*/
+
+*html #menu_css .accueil {
+
+	left:265px;
+}
+*html #menu_css .equipe {
+
+	left:333px;
+	top:-2px;
+}
+*html  #menu_css .expertise {
+
+	left:401px;
+		top:-2px;
+}
+*html  #menu_css .chronique {
+
+	left:502px;
+		top:-2px;
+}
+*html  #menu_css .contact {
+
+	left:605px;
+		top:-2px;
+}
